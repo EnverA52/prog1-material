@@ -3,16 +3,10 @@ package listprops
 import "fmt"
 
 func ExampleContains() {
-<<<<<<< HEAD
-	l : = []string{"Hallo", "Welt", "gute" "Nacht"}
-	fmt.Println(Contains(l, "Welt"))  
-	fmt.Println(Contains(l, "Haus"))   
-=======
 	l := []string{"Hallo", "Welt", "gute", "Nacht"}
 	fmt.Println(Contains(l, "Welt"))
 	fmt.Println(Contains(l, "Haus"))
 
->>>>>>> 5ae0ab8d5c600775be1f49a9c34abb5e0eef686b
 	// Output:
 	// true
 	// false
