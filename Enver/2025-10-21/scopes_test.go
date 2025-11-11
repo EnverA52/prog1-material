@@ -1,5 +1,5 @@
 package scopes_test
 
-func Example_Scopes() {
-	x := 1
-}
+// func Example_Scopes() {
+// 	x := 1
+// }

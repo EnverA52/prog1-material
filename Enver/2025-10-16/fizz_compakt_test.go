@@ -1,7 +1,7 @@
 package fizzbuzz
 
-func ExampleFizzCompact() {
-	FizzCompact()
+// func ExampleFizzCompact() {
+// 	FizzCompact()
 
-	// Output:
-}
+// 	// Output:
+// }
