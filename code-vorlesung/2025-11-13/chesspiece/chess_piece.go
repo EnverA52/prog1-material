@@ -61,9 +61,73 @@ func (p ChessPiece) MoveAllowed(row, col int) bool {
 			return true
 		}
 	}
+
 	if p.pieceType == KNIGHT {
-		/* ... */
+		// +-2 Horizontale & +-1 Vertikal
+		if (((row+2) == p.row) || ((row-2) == p.row)) && ((col+1) == p.column) || ((col - 1) == p.column) {
+			return true
+		}
+		//+-2 Vertikale & +-1 Horizontal
+		if (((col+2) == p.column) || ((col-2) == p.column)) && ((row+1) == p.row) || ((row - 1) == p.row) {
+			return true
+		}
+	}
+
+	if p.pieceType == QUEEN {
+		// Diagonale von links unten nach rechts oben.
+		if row-col == p.row-p.column {
+			return true
+		}
+		// Diagonale von links oben nach rechts unten.
+		if row+col == p.row+p.column {
+			return true
+		}
+		// +- Vertikal
+		if col == p.column {
+			return true
+		}
+		// +- Horizontal
+		if row == p.row {
+			return true
+		}
+	}
+	if p.pieceType == PAWN {
+		// +1 Horizontal
+		if row+1 == p.row {
+			return true
+		}
+	}
+
+	if p.pieceType == KING {
+		// diagonale von links nach rechts
+		if row+1 == p.row && col+1 == p.row {
+			return true
+		}
+		// diagonale von Rechts nach Links
+		if row-1 == p.row && col-1 == p.row {
+			return true
+		}
+		// horizontale -+1
+		if row+1 == p.row || row-1 == p.row {
+			return true
+		}
+		if col+1 == p.column || col-1 == p.column {
+			return true
+		}
+	}
+	if p.pieceType == ROOK {
+
+		// +- Vertikal
+		if col == p.column {
+			return true
+		}
+		// +- Horizontal
+		if row == p.row {
+			return true
+		}
+
 	}
 
 	return false
+
 }
