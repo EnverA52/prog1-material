@@ -7,7 +7,7 @@ func ExampleReverse() {
 	fmt.Println(Reverse(l1))
 
 	// Output:
-	// [ 5 4 3 2 1 ]
+	// [ 5 4 3 2 1]
 }
 
 func ExampleDuplicateElements() {
@@ -15,5 +15,5 @@ func ExampleDuplicateElements() {
 	fmt.Println(DuplicateElements(l1))
 
 	// Output:
-	// [ 1 1 2 2 3 3 4 4 5 5 ]
+	// [ 1 1 2 2 3 3 4 4 5 5]
 }

@@ -6,7 +6,10 @@ package listen
 // Die Funktion muss rekursiv sein.
 func Reverse(list []int) []int {
 	// TODO
-	return []int{}
+	if len(list) == 0 {
+		return []int{}
+	}
+	return append(Reverse(list[1:]), list[0])
 }
 
 // DuplicateElements erwartet eine Liste und dupliziert
@@ -15,5 +18,9 @@ func Reverse(list []int) []int {
 // Die Funktion muss rekursiv sein.
 func DuplicateElements(list []int) []int {
 	// TODO
-	return []int{}
+	if len(list) == 0 {
+		return []int{}
+	}
+
+	return append([]int{list[0], list[0]}, DuplicateElements(list[1:])...)
 }
