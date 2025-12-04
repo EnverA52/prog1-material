@@ -9,8 +9,8 @@ package aufgabe1
 func PrefixBelow10(list []int) []int {
 	// TODO
 	result := []int{}
-	for i := 0; [list]i < 10 && i len(list); i++ {
-		result = append(result,list[i])
+	for i := 0; list[i] < 10 && i < len(list); i++ {
+		result = append(result, list[i])
 	}
 	return result
 }

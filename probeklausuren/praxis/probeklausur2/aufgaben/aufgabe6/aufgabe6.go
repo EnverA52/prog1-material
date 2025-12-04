@@ -13,5 +13,6 @@ package aufgabe6
 func DuplicateSinglets(list []int) []int {
 	result := []int{}
 	// TODO
+
 	return result
 }
