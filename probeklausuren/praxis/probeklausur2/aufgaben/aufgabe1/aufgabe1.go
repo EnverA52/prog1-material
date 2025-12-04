@@ -8,5 +8,9 @@ package aufgabe1
 // die längste Teil-Liste, mit der "list" beginnt und die nur Zahlen < 10 enthält.
 func PrefixBelow10(list []int) []int {
 	// TODO
-	return []int{}
+	result := []int{}
+	for i := 0; [list]i < 10 && i len(list); i++ {
+		result = append(result,list[i])
+	}
+	return result
 }
